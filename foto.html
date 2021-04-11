@@ -9,17 +9,29 @@
   rel="stylesheet" 
   integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
   crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css">
   <title>Fotot</title>
 </head>
 <body>
   <h1>Galerie</h1>
-  <img src="src/images/1.jpg" alt="croissant">
-  <img src="src/images/2.jpg" alt="croissant">
-  <img src="src/images/3.jpg" alt="croissant">
-  <ul>
-    <li> <a href="index.html">Homepage</a></li>
-    <li> <a href="foto.html">Foto</a> </li>
-    <li> <a href="contact.html">Contact</a></li>
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-4">
+        <img src="src/images/1.jpg" alt="croissant" class="img-fluid border border-white border-4 shadow p-3 mb-5 bg-body rounded">
+       </div>
+       <div class="col-sm-4">
+        <img src="src/images/2.jpg" alt="croissant" class="img-fluid border border-white border-4 shadow p-3 mb-5 bg-body rounded">
+       </div>
+       <div class="col-sm-4">
+        <img src="src/images/3.jpg" alt="croissant" class="img-fluid border border-white border-4 shadow p-3 mb-5 bg-body rounded">
+       </div>
+     </div>    
+   </div>
+  
+  <ul class="d-flex justify-content-evenly">
+    <li> <a href="index.html" class="btn btn-outline-primary">Homepage</a></li>
+    <li> <a href="foto.html" class="btn btn-outline-primary">Foto</a> </li>
+    <li> <a href="contact.html" class="btn btn-outline-primary">Contact</a></li>
   </ul>
 </body>
 </html>
